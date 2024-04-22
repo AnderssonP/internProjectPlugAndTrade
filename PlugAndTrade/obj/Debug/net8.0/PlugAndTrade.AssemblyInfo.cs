@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlugAndTrade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2f945cd0ecb2f8c755b8c7cbc1bbd059cae73cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlugAndTrade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlugAndTrade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
