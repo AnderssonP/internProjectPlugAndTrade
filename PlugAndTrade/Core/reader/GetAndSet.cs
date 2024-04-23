@@ -1,8 +1,10 @@
 ﻿namespace PlugAndTrade.Core.reader
 {
-    internal class GetAndSet
+    public class GetAndSet
     {
-        public int id { get; set; }
+        public string id { get; set; }
+        public bool sellable { get; set; }
+        public bool visible { get; set; }
 
     }
 
