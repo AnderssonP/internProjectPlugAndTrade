@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "DXqghpjl0R3lfcca09IOFKZXIlqurGVuZExlB9a2I9LSSgOE+d/WKjKAQP1FzG6CKnJVh1TpdKaEDaLhSVwXXQ==",
+  "dgSpecHash": "9J9hyb8s1dSU10DCFHpif5roX+YsuccqZ1jbAqAibmuNphXq52xAERC7z5riIVIoKEpeZRpphu8HanHO83ObJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\astri\\Desktop\\repos\\internProjectPlugAndTrade\\PlugAndTrade\\PlugAndTrade.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\pontande123\\source\\repos\\plugAndTrade\\PlugAndTrade\\PlugAndTrade\\PlugAndTrade.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.0\\microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.configuration.json\\8.0.0\\microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\8.0.0\\microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\pontande123\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
