@@ -1,6 +1,6 @@
-﻿# ignore All data files
-/data/Availabilities
-/data/Pricings
-/data/Products
+﻿# ignore All TestProductData files
+/TestProductData/Availabilities
+/TestProductData/Pricings	
+/TestProductData/Products
 
 
