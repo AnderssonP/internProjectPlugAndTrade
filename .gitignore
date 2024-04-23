@@ -4,7 +4,7 @@
 
 /.vs/PlugAndTrade
 /.vs
-/PlugAndTrade/bin/Debug/net8.0
+/PlugAndTrade/bin/Debug/net8.0/
 /PlugAndTrade/TestProductData/Pricings
 /PlugAndTrade/obj/Debug/net8.0/ref
 /PlugAndTrade/obj/Debug/net8.0/refint
@@ -26,3 +26,6 @@
 /PlugAndTrade/obj/PlugAndTrade.csproj.nuget.g.props
 /PlugAndTrade/obj/project.assets.json
 /PlugAndTrade/obj/project.nuget.cache
+/PlugAndTrade/obj/
+/PlugAndTrade/data/
+\PlugAndTrade\obj\
