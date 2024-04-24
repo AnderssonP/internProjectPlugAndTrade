@@ -5,21 +5,21 @@
         var list = GetProductInfo(filePath);
         // LINQ
 
-        //var isNotSellable = list
-        //    .Where(p => p.Sellable);
+        var isNotSellable = list
+            .Where(p => p.Sellable);
 
-        //var isNotSellableAndHasProductId = isNotSellable
-        //    .Where(p => string.IsNullOrEmpty(p.Id))
-        //    .ToArray();
-        //var isSellable = list.Count(product => product.Sellable);
-        //var hasNoId = list.Count(product => product.Id != string.Empty);
-        //var ids = list.Select(item => item.Id);
-        //int count = 0;
-        //foreach (var i in ids )
-        //{
-        //    count++;
-        //}
-        //Console.WriteLine();
+        var isNotSellableAndHasProductId = isNotSellable
+            .Where(p => string.IsNullOrEmpty(p.Id))
+            .ToArray();
+        var isSellable = list.Count(product => product.Sellable);
+        var hasNoId = list.Count(product => product.Id != string.Empty);
+        var ids = list.Select(item => item.Id);
+        int count = 0;
+        foreach (var i in ids)
+        {
+            count++;
+        }
+        Console.WriteLine();
         var uniqueValues = list.Select(item => item.NetContent.Value)
             .Distinct().OrderBy(i => i);
 
