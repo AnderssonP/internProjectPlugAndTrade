@@ -1,9 +1,6 @@
 ﻿# ignore All TestProductData files
-/data/Availabilities
-/data/Pricings
-/data/Products
-
-/obj/Debug
-
+/Data/Availabilities
+/Data/Pricings
+/Data/Products
 
 

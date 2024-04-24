@@ -8,8 +8,8 @@
         {
             string filename = f.FullName;
             string jsonString = File.ReadAllText(filename);
-            GetAndSet getAndSet = JsonSerializer.Deserialize<GetAndSet>(jsonString);
-            Console.WriteLine(getAndSet);
+            ProductInfo productInfo = JsonSerializer.Deserialize<ProductInfo>(jsonString);
+            Console.WriteLine(productInfo);
             // LINQ
         }
         return (List<string>)list;

@@ -26,3 +26,7 @@
 /PlugAndTrade/obj/PlugAndTrade.csproj.nuget.g.props
 /PlugAndTrade/obj/project.assets.json
 /PlugAndTrade/obj/project.nuget.cache
+/PlugAndTrade/obj/
+/PlugAndTrade/bin/Debug
+/PlugAndTrade/configurationManager.cs
+/PlugAndTrade/appsettings.json

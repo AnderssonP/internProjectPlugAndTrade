@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using PlugAndTrade;
+using PlugAndTrade.Types;
 
 class Program
 {
@@ -9,8 +10,10 @@ class Program
         string filePath = configuration.GetSection("DataPath").Value;
 
         //List<string> list = Price.readPrice(filePath);
-        List<GetAndSet> productList = Product.readProduct(filePath);
-        Console.WriteLine(productList.Count);
+        //var productList = ProductFilesRepository.ReadProduct(filePath);
+        var assortmentList = AssortmentFilesRepository.ReadAssortment(filePath);
+        //Console.WriteLine(productList.Length);
+        Console.WriteLine(assortmentList.Length);
     }
     
 }
