@@ -12,6 +12,11 @@ namespace PlugAndTrade.Core.reader
         [JsonPropertyName("visible")]
 
         public bool Visible { get; set; }
+
+        [JsonPropertyName("brand")]
+
+        public string Brand { get; set; }
+
         [JsonPropertyName("netContent")]
 
         public NetContent NetContent { get; set; }
