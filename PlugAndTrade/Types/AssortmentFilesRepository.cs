@@ -7,15 +7,11 @@ public class AssortmentFilesRepository
     {
         var list = GetAssortmentInfo(filePath);
 
-        var outOfStock = list.Where(a => a.StockStatus == 0);
-        var outOfStockList = outOfStock.ToArray();
-        foreach (var o in outOfStock )
-        {
-            Console.WriteLine(o.StockStatus);
-        }
-        Console.WriteLine(outOfStockList.Length);
-        return list.ToArray();
+       SwitchStateAssortment.switchForAssortment(list);
+       
+       return list.ToArray();
     }
+
 
     private static IEnumerable<AvailabilitiesInfo> GetAssortmentInfo(string filePath)
     {

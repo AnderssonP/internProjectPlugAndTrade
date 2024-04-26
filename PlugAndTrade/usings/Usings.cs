@@ -9,3 +9,6 @@ global using System.Text.Json.Serialization;
 
 global using Microsoft.Extensions.Configuration;
 
+global using PlugAndTrade.Core;
+global using PlugAndTrade.Core.Switch;
+
