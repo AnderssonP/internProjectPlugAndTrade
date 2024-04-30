@@ -1,11 +1,9 @@
 ﻿public class ProductFilesRepository
 {
-    public static ProductInfo[] ReadProduct(string filePath,string input)
+    public static ProductInfo[] ReadProduct(string filePath,string input,string CSVFiles,string mapName)
     {
         var list = GetProductInfo(filePath);
-
-        SwitchStatesProducts.SwitchForProduct(input, list);
-
+        CsvToFile.WriteToCsv(ProductSwitchProcessor.ProductProcesser(input, list), mapName, CSVFiles);
         return list.ToArray();
     }
 
