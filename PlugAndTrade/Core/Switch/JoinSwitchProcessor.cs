@@ -2,12 +2,11 @@
 {
     public class JoinSwitchProcessor
     {
-        public static IEnumerable<string> JoinProcessor(string input, IEnumerable<ProductInfo> list)
+        public static IEnumerable<string> JoinProcessor(string input, IEnumerable<ProductInfo> product, IEnumerable<AvailabilitiesInfo> available, IEnumerable<PriceInfo> price)
         {
             switch (input)
             {
-                case "1":
-                    return 
+                
             }
             return null;
         }

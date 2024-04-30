@@ -3,13 +3,19 @@
 public class AssortmentFilesRepository
 {
 
-    public static AvailabilitiesInfo?[] ReadAssortment(string filePath)
-    { 
+    public static IEnumerable<AvailabilitiesInfo> ReadAssortment(string filePath)
+    {
         var list = GetAssortmentInfo(filePath);
-        CsvToFile.WriteToCsv();
-       SwitchStateAssortment.switchForAssortment(list);
-       
-       return list.ToArray();
+        return list;
+    }
+
+    public static IEnumerable<AvailabilitiesInfo> AssortmentProcessor(string filePath, string input, string CSVFiles, string mapName)
+    {
+        var product = ProductFilesRepository.ReadProduct(filePath);
+        var assortment = ReadAssortment(filePath);
+        var price = PriceFilesRepository.ReadPrice(filePath);
+        CsvToFile.WriteToCsv(JoinSwitchProcessor.JoinProcessor(input, product, assortment, price), mapName, CSVFiles);
+        return assortment;
     }
 
 
@@ -27,6 +33,7 @@ public class AssortmentFilesRepository
             var filename = f.FullName;
             var jsonString = File.ReadAllText(filename);
             var availabilitiesInfo = ProductInfo(jsonString);
+            count++;
             yield return availabilitiesInfo;
         }
     }

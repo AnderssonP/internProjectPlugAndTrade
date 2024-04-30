@@ -1,10 +1,14 @@
 ﻿public class ProductFilesRepository
 {
-    public static ProductInfo[] ReadProduct(string filePath,string input,string CSVFiles,string mapName)
+    public static IEnumerable<ProductInfo> ReadProduct(string filePath)
     {
         var list = GetProductInfo(filePath);
-        CsvToFile.WriteToCsv(ProductSwitchProcessor.ProductProcesser(input, list), mapName, CSVFiles);
-        return list.ToArray();
+        return list;
+    }
+
+    public static void ProductProcessor(string filePath, string input, string CSVFiles, string mapName)
+    {
+        CsvToFile.WriteToCsv(ProductSwitchProcessor.ProductProcesser(input, filePath), mapName, CSVFiles);
     }
 
     private static IEnumerable<ProductInfo> GetProductInfo(string filePath)
