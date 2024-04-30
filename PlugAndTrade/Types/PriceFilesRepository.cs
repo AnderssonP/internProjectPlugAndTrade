@@ -1,10 +1,10 @@
 ﻿public class PriceFilesRepository
 {
-    public static PriceInfo[] ReadPrice(string filePath)
+    public static IEnumerable<PriceInfo> ReadPrice(string filePath)
     {
         var list = GetPriceInfo(filePath);
 
-        return list.ToArray();
+        return list;
     }
 
     private static IEnumerable<PriceInfo> GetPriceInfo(string filePath)
