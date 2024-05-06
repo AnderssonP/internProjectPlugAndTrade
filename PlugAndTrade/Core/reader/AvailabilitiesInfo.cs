@@ -4,8 +4,8 @@
     {
         [JsonPropertyName("id")]
         public string id { get; set; }
-        [JsonPropertyName("sapCustomerId")]
-        public string SapCustomerId { get; set; }
+        [JsonPropertyName("available")]
+        public bool Available { get; set; }
         [JsonPropertyName("storeNumber")]
         public string StoreNumber { get; set; }
         [JsonPropertyName("stockStatus")]

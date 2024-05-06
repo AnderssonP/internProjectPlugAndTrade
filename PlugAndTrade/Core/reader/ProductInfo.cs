@@ -9,6 +9,8 @@ namespace PlugAndTrade.Core.reader
 
         [JsonPropertyName("sellable")]
         public bool Sellable { get; set; }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
         [JsonPropertyName("visible")]
 
         public bool Visible { get; set; }

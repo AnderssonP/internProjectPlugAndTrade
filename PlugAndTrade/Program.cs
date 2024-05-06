@@ -17,17 +17,16 @@ class Program
             Console.WriteLine("1: Hämta id \n" +
                               "2: Unika values desc \n" +
                               "3: Groupera på brands \n" +
-                              "4: desc brands och desc ids tillhörande brands\n" +
+                              "4: Desc brands och desc ids tillhörande brands\n" +
                               "5: All brand info\n" +
-                              "6: join med brand,id och stockstatus");
+                              "6: Join med brand,id och stockstatus\n" +
+                              "7: Alla kombinerade med brand,id,stockstatus och pris\n" +
+                              "8: Kombinerade filer med specifikt brand");
             var input = Console.ReadLine();
             Console.WriteLine("Ge ett namn till din mapp");
             var mapName = Console.ReadLine();
-            if (input == "6")
-            {
-                var assortmentList = AssortmentFilesRepository.AssortmentProcessor(DatafilePath, input, CSVFiles, mapName);
-            }
-             ProductFilesRepository.ProductProcessor(DatafilePath, input, CSVFiles, mapName);
+            
+             ProductFilesRepository.ProductHandler(DatafilePath, input, CSVFiles, mapName);
             
             //var assortmentList = AssortmentFilesRepository.ReadAssortment(filePath);
             //Console.WriteLine(productList.Length);
