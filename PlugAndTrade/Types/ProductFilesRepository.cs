@@ -6,7 +6,7 @@
         return list;
     }
 
-    public static void ProductProcessor(string filePath, string input, string CSVFiles, string mapName)
+    public static void ProductHandler(string filePath, string input, string CSVFiles, string mapName)
     {
         CsvToFile.WriteToCsv(ProductSwitchProcessor.ProductProcesser(input, filePath), mapName, CSVFiles);
     }
@@ -18,10 +18,10 @@
         
         foreach (var product in products.GetFiles())
         {
-            if (count >= 99)
-            {
-                yield break;
-            }
+            //if (count >= 99)
+            //{
+            //    yield break;
+            //}
             var filename = product.FullName;
             var jsonString = File.ReadAllText(filename);
             var productInfo = GetProductInfoFromJson(jsonString);

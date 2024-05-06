@@ -9,15 +9,6 @@ public class AssortmentFilesRepository
         return list;
     }
 
-    public static IEnumerable<AvailabilitiesInfo> AssortmentProcessor(string filePath, string input, string CSVFiles, string mapName)
-    {
-        var product = ProductFilesRepository.ReadProduct(filePath);
-        var assortment = ReadAssortment(filePath);
-        var price = PriceFilesRepository.ReadPrice(filePath);
-        CsvToFile.WriteToCsv(JoinSwitchProcessor.JoinProcessor(input, product, assortment, price), mapName, CSVFiles);
-        return assortment;
-    }
-
 
     private static IEnumerable<AvailabilitiesInfo> GetAssortmentInfo(string filePath)
     {
@@ -26,10 +17,10 @@ public class AssortmentFilesRepository
 
         foreach (var f in availabilities.GetFiles())
         {
-            if (count >= 99)
-            {
-                yield break;
-            }
+            //if (count >= 99)
+            //{
+            //    yield break;
+            //}
             var filename = f.FullName;
             var jsonString = File.ReadAllText(filename);
             var availabilitiesInfo = ProductInfo(jsonString);
