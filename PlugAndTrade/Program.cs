@@ -1,14 +1,18 @@
-﻿using PlugAndTrade.Core.CSVCode;
+﻿using PlugAndTrade.Connection;
+using PlugAndTrade.Core.CSVCode;
 using PlugAndTrade.Types;
 
 class Program
 {
     static void Main(string[] args)
     {
+        
         var configuration = configurationManager.GetConfiguration();
         
         var DatafilePath = configuration.GetSection("DataPath").Value;
         var CSVFiles = configuration.GetSection("CSVFile").Value;
+        var password = configuration.GetSection("Password").Value;
+        WriteToElastic.SendDataToElasticsearch(ProductFilesRepository.ReadProduct(DatafilePath),password);
 
         while (true)
         {
