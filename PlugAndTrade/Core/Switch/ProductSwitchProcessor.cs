@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using PlugAndTrade.Connection;
 using PlugAndTrade.Types;
 
 namespace PlugAndTrade.Core.Switch
@@ -34,6 +35,7 @@ namespace PlugAndTrade.Core.Switch
                     return JoinSwitchMethods.CombinedWithSpecifikBrand(product, available, price, brand);
                 case "9":
                     return JoinSwitchMethods.CombinedData(product, available, price);
+                    
             }
             return null;
         }
